@@ -1,18 +1,21 @@
-# PROGRAM_2 - PERCABANGAN
+# Program_2 - Input Usia
 
 Deskripsi: Program ini meminta pengguna memasukkan usia, kemudian menentukan status berdasarkan rentang usia.
 
-## Metode
+## Penggunaan Scanner
 
-1. Menggunakan Scanner untuk mendapatkan input usia dari pengguna.
-2. Mencoba untuk mengubah input menjadi integer dengan `nextInt()`.
-3. Jika input adalah integer:
-   - Menampilkan status berdasarkan rentang usia (belum cukup umur, pemuda dewasa, orang dewasa).
-4. Jika input bukan integer:
-   - Menampilkan pesan "Input yang anda masukkan bukan angka".
+Penggunaan Scanner: `Scanner input = new Scanner(System.in);` untuk mendapatkan input usia.
 
-## Contoh Output
+## Penggunaan nextInt()
 
-- Input 15 -> Output: "15th, anda belum cukup umur"
-- Input 20 -> Output: "20th, anda adalah pemuda dewasa"
-- Input "abc" -> Output: "Input yang anda masukkan bukan angka"
+Digunakan untuk mengambil nilai usia dari pengguna.
+
+## Penggunaan try-catch
+
+Digunakan try-catch untuk menangkap `InputMismatchException` jika pengguna memasukkan nilai yang bukan integer.
+
+## Contoh Penggunaan
+
+- Jika input 15 -> Output: "15th, anda belum cukup umur"
+- Jika input 20 -> Output: "20th, anda adalah pemuda dewasa"
+- Jika input "abc" -> Output: "Input yang anda masukkan bukan angka"
